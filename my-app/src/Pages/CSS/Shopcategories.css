@@ -1,0 +1,84 @@
+.shopcategories-banner{
+    display: flex;
+    margin: 5% auto;
+    /* width:82px; */
+    max-width: 1500px; 
+    padding-left: -50px;
+}
+.shopcategory-indexSort {
+    display: flex;
+    margin: 0 auto; /* Center the sort section */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit the width */
+    padding: 0 2%; /* Add padding for responsiveness */
+}
+.shopcategory-sort{
+    padding: 10px 20px;
+    border-radius: 40px ;
+    border: 1px solid #888;
+}
+.shopcategory-indexSort p span{
+    font-weight: 600;
+
+}
+/* Container for the card grid */
+.shopcategory-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 columns, each taking equal width */
+    gap: 20px; /* Space between cards */
+    margin: 20px auto; /* Centering the container */
+    /* padding: 0 2%; Responsive padding */
+    max-width: 1200px; /* Optional: Limit container width */
+}
+
+/* Style for individual card items */
+.shopcategory-products .grid-item {
+    background: #fff; /* Card background */
+    border: 1px solid #ddd; /* Optional: Card border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Card padding */
+    text-align: center; /* Center content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+}
+
+.shopcategory-products img {
+    width: 100%; /* Ensure image fits container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container area */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .shopcategory-products {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .shopcategory-products {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .shopcategory-products {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+.shopcategory-loadmore{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin:150px auto;
+    width : 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: white;
+    color: #888;
+    font-size: 18px;
+    font: height 500px;
+
+}
